@@ -22,7 +22,7 @@ jobs:
           - ubuntu-20.04
 #          - macos-latest  TODO
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/fetch-codeql
       - uses: bazelbuild/setup-bazelisk@v2
       - uses: actions/setup-python@v3
