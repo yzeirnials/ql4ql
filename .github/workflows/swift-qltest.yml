@@ -29,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/fetch-codeql
-      - uses: bazelbuild/setup-bazelisk@v2
+      - uses: bazelbuild/setup-bazelisk@v3
       - name: Build Swift extractor
         run: |
           bazel run //swift:create-extractor-pack
